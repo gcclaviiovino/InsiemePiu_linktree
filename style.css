@@ -1,0 +1,175 @@
+/* --- Reset & Base Styles --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+	--cream: #fffcf7;
+	--navy: #000e40;
+	--teal: #0dbfbf;
+	--magenta: #b7366b;
+	--yellow: #ffd447;
+	--blue: #3642d8;
+	--navy-yellow-gradient: linear-gradient(135deg, var(--navy) 0%, var(--blue) 50%, var(--yellow) 100%);
+	--font-primary: 'Inter', sans-serif;
+	--serif: 'Cormorant Garamond', Georgia, serif;
+	--muted: #6b7280;
+}
+
+body {
+    background-color: var(--cream); /* Off-white background from image */
+    font-family: 'Funnel Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Mobile Canvas Container (Centered Link-in-bio style layout) */
+.container {
+    width: 100%;
+    max-width: 450px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px 10px;
+}
+
+/* --- Header Section --- */
+.header-section {
+    margin-bottom: 15px;
+}
+
+.logo-placeholder {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-image {
+    max-width: 120px;
+    height: auto;
+    display: block;
+}
+
+.main-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--navy);
+    font-style: italic;
+}
+
+.main-heading span {
+    color: var(--yellow);
+}
+
+.sub-heading {
+    font-family: 'Funnel Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-top: 5px;
+}
+
+/* --- Social Icons --- */
+.social-icons {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 35px;
+}
+
+.social-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: inline-flex; 
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* Basic fallback colors for social buttons */
+.icon-email { background-color: var(--teal); }
+.icon-linkedin { background-color: var(--magenta); border-radius: 4px; }
+.icon-facebook { background-color: var(--yellow); }
+
+/* --- Buttons Layout --- */
+.button-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 50px;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 16px 20px;
+    border-radius: 12px;
+    font-family: 'Funnel Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn-teal {
+    background-color: var(--teal);
+    color: var(--cream);
+}
+
+.btn-magenta {
+    background-color: var(--magenta);
+    color: var(--cream);
+}
+
+.btn-blue {
+    background-color: var(--blue);
+    color: var(--cream);
+}
+
+.btn-yellow {
+    background-color: var(--yellow);
+    color: var(--navy);
+}
+
+/* --- Footer Section --- */
+.footer-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: auto;
+    padding-top: 20px;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--blue);
+}
+
+.footer-icon {
+    font-size: 28px;
+    line-height: 1;
+}
+
+.icon-cura { color: var(--magenta); }
+.icon-supporto { color: #0c1844; }
+.icon-famiglia { color: var(--magenta); }
