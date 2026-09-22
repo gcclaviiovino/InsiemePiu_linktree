@@ -95,8 +95,15 @@ body {
     font-size: 18px;
 }
 
+.social-icon svg {
+    width: 18px;
+    height: 18px;
+    display: block;
+}
+
 /* Basic fallback colors for social buttons */
 .icon-email { background-color: var(--teal); }
+.icon-instagram { background-color: var(--magenta); }
 .icon-linkedin { background-color: var(--magenta); border-radius: 4px; }
 .icon-facebook { background-color: var(--yellow); }
 
